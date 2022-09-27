@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.6.9",
+    "@testing-library/react": "^13.4.0",
     "blurhash": "^1.1.5",
     "graphql": "^16.6.0",
     "react": "^18.2.0",
@@ -39,7 +40,6 @@
     "@swc/core": "^1.2.247",
     "@swc/jest": "^0.2.22",
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/jest": "^29.0.0",
     "@types/node": "^18.7.14",

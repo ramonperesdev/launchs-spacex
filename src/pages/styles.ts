@@ -40,7 +40,7 @@ export const BoxCenter = styled.div`
   position: absolute;
   height: 100%;
   max-height: 700px;
-  padding: 3.125rem;
+  padding: 3rem 3.5rem;
   border-radius: 15px;
   overflow: hidden;
 
@@ -56,7 +56,7 @@ export const BoxCenter = styled.div`
     left: 0;
     bottom: 0;
     border-radius: 15px;
-    opacity: 0.4;
+    opacity: 0.5;
   }
 
   .slick-slide {
@@ -92,52 +92,29 @@ export const TextTitle = styled.span`
   font-weight: 600;
   z-index: 200;
 `;
-export const ContentRow = styled.div`
-  display: flex;
-  z-index: 200;
-
-  span {
-    min-width: 25rem;
-  }
-`;
-export const Text = styled.span`
-  z-index: 200;
-  color: ${(props) => props.theme.white};
-`;
-export const ContentSlider = styled.div`
-  display: flex !important;
-  flex-direction: column;
-  gap: 1.875rem;
-`;
 
 export const Btn = styled.button`
   position: absolute;
-  top: 60%;
+  top: 45%;
   z-index: 2;
 
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 
-  background: #fff;
+  background: transparent;
   transition: background-color 0.2s ease-in-out;
 
   > svg {
-    color: red;
+    width: 50px;
+    height: 50px;
+    color: #fff;
     transition: color 0.2s ease-in-out;
   }
 
-  &:hover {
-    background: #f1f1f1;
-
-    > svg {
-      color: yellow;
-    }
-  }
-
   &.next {
-    right: 0.5rem;
+    right: 0rem;
   }
   &.prev {
-    left: 0.5rem;
+    left: 0rem;
   }
 `;
 
