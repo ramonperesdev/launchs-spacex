@@ -1,16 +1,26 @@
 import { useCallback, useRef } from 'react';
+
+// LIBS
 import { useQuery } from '@apollo/client';
-import { Container, BoxCenter, Btn, SatelliteAnimation } from './styles';
 import {
   MdOutlineArrowBackIosNew,
   MdOutlineArrowForwardIos,
 } from 'react-icons/md';
 import { Blurhash } from 'react-blurhash';
 import Slider from 'react-slick';
+
+// ASSETS
 import satelliteIcon from '../assets/satellite.png';
+
+// COMPONENTS
 import { LaunchLatest } from '../components/LaunchLatest';
 import { LaunchNext } from '../components/LaunchNext';
+
+// SERVICES
 import { getSpacexData } from '../services';
+
+// STYLES
+import { Container, BoxCenter, Btn, SatelliteAnimation } from './styles';
 
 export function Home() {
   const { GET_DATA } = getSpacexData();

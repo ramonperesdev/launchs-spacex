@@ -1,4 +1,7 @@
+// TYPES
 import { ILaunchData } from '../../@types/types';
+
+// STYLES
 import { ContentSlider, ContentRow, TextTitle, Text } from './styles';
 
 interface ILaunchLatestProps {
