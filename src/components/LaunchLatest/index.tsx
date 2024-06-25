@@ -14,7 +14,7 @@ export function LaunchLatest({ launchData }: ILaunchLatestProps) {
     month: 'numeric',
     day: 'numeric',
   };
-  const formatDate = new Date(launchData.launch_date_utc).toLocaleDateString(
+  const formatDate = new Date(launchData?.launch_date_utc).toLocaleDateString(
     'en-US',
     options
   );
